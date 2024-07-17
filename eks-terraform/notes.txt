@@ -1,0 +1,5 @@
+terraform init
+terraform plan
+terraform apply --auto-approve
+Create IAM access entries with root user (AmazonEKSClusterAdminPolicy)
+aws eks update-kubeconfig --name clusterName --region ap-southeast4
