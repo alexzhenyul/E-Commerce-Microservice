@@ -1,4 +1,4 @@
-pipeline {   
+pipeline {
     agent any
 
     stages {
@@ -15,8 +15,8 @@ pipeline {
         stage('Push Docker Image') {
             steps {
                 script {
-                    withDockerRegistry(credentialsId: 'dockerhub, toolName: 'docker') {
-                        sh "docker push alexzhenyul/emailservice:latest "
+                    withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
+                        sh "docker push alexzhenyul/emailservice:latest"
                     }
                 }
             }
