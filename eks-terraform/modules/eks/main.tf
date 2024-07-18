@@ -55,6 +55,12 @@ resource "aws_eks_node_group" "node-grp" {
   update_config {
     max_unavailable = 1
   }
+
+  # Remote access configuration
+  remote_access {
+    ec2_ssh_key = var.ec2_ssh_key_name  
+  }
+
   depends_on = [aws_eks_cluster.eks]
 }
 

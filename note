@@ -1,4 +1,0 @@
-1. Install Multibranch Web Trigger Plugin
-2. Scan by webhook -> ？
-3. JENKINS_URL/multibranch-webhook-trigger/invoke?token=[Trigger token]
-http://16.51.116.107:8080/multibranch-webhook-trigger/invoke?token=alexzhenyul

@@ -16,6 +16,12 @@ variable "cluster_name" {
   description = "Project Name"
 }
 
+# SSH Key name
+variable "cluster_name" {
+  default     = "devops.pem"
+  description = "EC2 SSH Key"
+}
+
 # Public subnet AZ1
 variable "public_subnet_az1_id" {
   type        = string
