@@ -17,7 +17,7 @@ variable "cluster_name" {
 }
 
 # SSH Key name
-variable "cluster_name" {
+variable "ssh_key" {
   default     = "devops.pem"
   description = "EC2 SSH Key"
 }
