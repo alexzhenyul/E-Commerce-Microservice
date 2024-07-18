@@ -1,36 +1,51 @@
-variable "kubernetes_version" {
-  default     = 1.29
-  description = "kubernetes version"
+# Stack Name
+variable "cluster_name" {
+  type = string
 }
-variable "project_name" {
-  default = "E-commerce"
-  description = "project name"
+
+# Worker Node instance size
+variable "instance_size" {
+  type = string
 }
-variable "environment" {
-  default = "stage"
-  description = "project environment"
+
+# Region
+variable "region" {}
+
+# Environment
+variable "env" {
+  type    = string
+  default = "Prod"
 }
-variable "vpc_cidr" {
-  default     = "10.0.0.0/16"
-  description = "default CIDR range of the VPC"
+
+# Type
+variable "type" {
+  type    = string
+  default = "Production"
 }
-variable "aws_region" {
-  default = "ap-southeast-4"
-  description = "aws region"
+
+# Instance count
+variable "instance_count" {
+  type = string
 }
-variable "private_subnet_cidr_blocks" {
-  default = ["10.0.3.0/24", "10.0.4.0/24"]
-  description = "aws private subnets"
+
+# AMI ID
+variable "ami_id" {
+  type = string
 }
-variable "public_subnet_cidr_blocks" {
-  default = ["10.0.1.0/24", "10.0.2.0/24"]
-  description = "aws public subnets"
+
+# Cluster Version
+variable "cluster_version" {
+  type = string
 }
-variable "ami_type" {
-  default = "AL2_x86_64"
-  description = "aws eks ami type"
+
+# VPC CNI Version
+variable "vpc-cni-version" {
+  type        = string
+  description = "VPC CNI Version"
 }
-variable "instance_types" {
-  default = ["t3.medium"]
-  description = "aws eks instance type"
+
+# Kube Proxy Version
+variable "kube-proxy-version" {
+  type        = string
+  description = "Kube Proxy Version"
 }

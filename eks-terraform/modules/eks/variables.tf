@@ -65,6 +65,13 @@ variable "image_id" {
 }
 
 # Cluster Version
+variable "ssh_key_name" {
+  default     = "devops.pem"
+  type        = string
+  description = "ssh key name"
+}
+
+# Cluster Version
 variable "cluster_version" {
   type        = string
   description = "Cluster Version"

@@ -1,0 +1,2 @@
+aws eks --region ap-southeast-4 update-kubeconfig --name E-Commerce-Microservice-eks-cluster
+Added new context arn:aws:eks:ap-southeast-4:253343486660:cluster/E-Commerce-Microservice-eks-cluster to /home/ubuntu/.kube/config
